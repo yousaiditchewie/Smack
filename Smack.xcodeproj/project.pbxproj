@@ -12,6 +12,7 @@
 		16269E981FA2EB7500249359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16269E961FA2EB7500249359 /* Main.storyboard */; };
 		16269E9A1FA2EB7500249359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16269E991FA2EB7500249359 /* Assets.xcassets */; };
 		16269E9D1FA2EB7500249359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16269E9B1FA2EB7500249359 /* LaunchScreen.storyboard */; };
+		1B2A9E5D5E653AABA362C877 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B596AA477923EC36E3A3243 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		16269E991FA2EB7500249359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16269E9C1FA2EB7500249359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16269E9E1FA2EB7500249359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B596AA477923EC36E3A3243 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D750E954063CB2665AAC93 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
+		996924B59816EC1676348EDD /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2A9E5D5E653AABA362C877 /* Pods_Smack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				16269E911FA2EB7500249359 /* Smack */,
 				16269E901FA2EB7500249359 /* Products */,
+				EE68487149CCD5513EC2092E /* Pods */,
+				EF83549003ADC50CF5C5518F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Smack;
 			sourceTree = "<group>";
 		};
+		EE68487149CCD5513EC2092E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49D750E954063CB2665AAC93 /* Pods-Smack.debug.xcconfig */,
+				996924B59816EC1676348EDD /* Pods-Smack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF83549003ADC50CF5C5518F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B596AA477923EC36E3A3243 /* Pods_Smack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16269EA11FA2EB7500249359 /* Build configuration list for PBXNativeTarget "Smack" */;
 			buildPhases = (
+				6AFD61983BA096D7AB3719CC /* [CP] Check Pods Manifest.lock */,
 				16269E8B1FA2EB7500249359 /* Sources */,
 				16269E8C1FA2EB7500249359 /* Frameworks */,
 				16269E8D1FA2EB7500249359 /* Resources */,
+				1DEB1EEFC504CD3D3B24A216 /* [CP] Embed Pods Frameworks */,
+				4015AD546A3B683B8441F160 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DEB1EEFC504CD3D3B24A216 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack/Pods-Smack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4015AD546A3B683B8441F160 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack/Pods-Smack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AFD61983BA096D7AB3719CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16269E8B1FA2EB7500249359 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		16269EA21FA2EB7500249359 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D750E954063CB2665AAC93 /* Pods-Smack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +362,7 @@
 		};
 		16269EA31FA2EB7500249359 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 996924B59816EC1676348EDD /* Pods-Smack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
